@@ -1,0 +1,25 @@
+#ifndef SDL_MANAGER
+#define SDL_MANAGER
+
+#include <SDL.h>
+
+#define WIN_WIDTH 800
+#define WIN_HEIGHT 600
+#define WIN_TITLE "Snake"
+#define SQUARE_WIDTH 40
+#define SQUARE_HEIGHT 40
+#define COLOR_BACKGROUND 255,255,255,SDL_ALPHA_OPAQUE
+#define COLOR_BACKGROUND_GO 150,150,150,SDL_ALPHA_OPAQUE
+#define COLOR_FOOD 255,0,0,SDL_ALPHA_OPAQUE
+#define COLOR_FOOD_2 0,255,0,SDL_ALPHA_OPAQUE
+#define COLOR_SNAKE_BODY 0,0,0,SDL_ALPHA_OPAQUE
+#define COLOR_SNAKE_HEAD 0,0,255,SDL_ALPHA_OPAQUE
+#define COLOR_SNAKE_GO 255,127,0,SDL_ALPHA_OPAQUE
+#define UPDATE_PERIOD 1000/10
+
+void SDL_Initialisation();
+void SDL_End();
+void SDL_Sleep(unsigned int msTime);
+void SDL_ExitWithSDLError(const char errorMsg[]);
+
+#endif
